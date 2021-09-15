@@ -1,8 +1,8 @@
 import React from 'react'
 
 
-export default function ToDoItem() {
+export default function ToDoItem({todo}) {
     return(
-        <li>todo</li>
+        <li>{todo.title}</li>
     )
 }
