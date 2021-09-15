@@ -5,8 +5,8 @@ import ToDoItem from './ToDoItem'
 export default function ToDoList(props) {
     return(
         <ul className = 'styles'>
-       { props.todos.map(todo => {
-           return <ToDoItem todo = {todo}/>
+       { props.todos.map((todo, index) => {
+           return <ToDoItem todo = {todo} key = {todo.id} index = {index}/>
        }) }
         </ul>
     )

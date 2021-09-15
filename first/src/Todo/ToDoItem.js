@@ -1,8 +1,11 @@
 import React from 'react'
 
 
-export default function ToDoItem({todo}) {
+export default function ToDoItem({todo, index}) {
     return(
-        <li>{todo.title}</li>
+        <li>
+            <strong>{index + 1}</strong>
+            {todo.title}
+        </li>
     )
 }

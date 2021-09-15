@@ -10,13 +10,15 @@ function App() {
     {id: 3, completed: false, title: 'Купить снюс'},
   ]
 
+  
   return (
+  
    <div className = 'wrapper'>
      <h1>Необходимое для жизни анимешника</h1>
 
-     <ToDoList todos = {todos} key = {todos.id} />
+     <ToDoList todos = {todos}/>
    </div>
   );
+  
 }
-
 export default App;
